@@ -76,6 +76,19 @@ body #about p {
 body #about p span {
   font-weight: 600;
 }
+body #projects .card {
+  border: 7px solid #444444 !important;
+  background-color: #EDEDED !important;
+  color: #171717;
+}
+body #projects .card h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #da0037;
+}
+body #projects .card button:hover {
+  border-color: #da0037 !important;
+}
 
 .disable,
 .disable2 {
