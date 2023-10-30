@@ -123,6 +123,10 @@ body #about p span {
 }
 
 @media (max-width: 768px) {
+  body main {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
   body main h1 {
     font-size: 3.5rem !important;
   }
@@ -130,6 +134,10 @@ body #about p span {
 @media (max-width: 576px) {
   body header a {
     font-size: 1rem !important;
+  }
+  body main {
+    background-size: 300% 100%;
+    background-repeat: no-repeat;
   }
   body main h1 {
     font-size: 1.3rem !important;

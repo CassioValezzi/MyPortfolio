@@ -55,7 +55,7 @@ body {
     }
 
     main {
-        background-image: url(../assets/gif/gif-7sec.gif) !important;
+        background-image: url(../gif/gif-7sec.gif) !important;
         background-size: cover;
         background-attachment: fixed;
         h1 {
@@ -169,6 +169,8 @@ body {
 @media(max-width: $layout-breakpoint-medium ) {
     body {
         main {
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
             h1 {
                 font-size: 3.5rem !important;
             }
@@ -186,6 +188,8 @@ body {
         }
 
         main {
+            background-size: 300% 100%;
+            background-repeat: no-repeat;
             h1 {
                 font-size: 1.3rem !important;
 
