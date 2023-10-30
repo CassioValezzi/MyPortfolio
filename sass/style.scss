@@ -1,0 +1,217 @@
+$color-1: #171717;
+$color-2: #444444;
+$color-3: #da0037;
+$color-4: #EDEDED;
+$color-shadow:#00000080;
+
+$layout-breakpoint-small: 576px;
+$layout-breakpoint-medium: 768px;
+$layout-breakpoint-large: 992px;
+
+html {
+    scroll-behavior: smooth ;
+}
+
+body {
+    background-color: $color-1;
+    color: $color-4 !important;
+    font-family: "Montserrat";
+
+    header {
+        background-color: $color-2 !important;
+        box-shadow: 2px 5px 7px 1px #0f0f0f !important;
+
+        a {
+            span {
+                font-weight: 800;
+            }
+        }
+
+        nav {
+            button {
+                background-color: $color-4 !important;
+            }
+
+            a {
+                color: $color-4 !important;
+                font-weight: 700 !important;
+            }
+
+            ul {
+                a {
+                    font-weight: 200 !important;
+                    transition: 1s ease-out;
+
+                    &:hover {
+                        text-decoration: overline;
+                        color: $color-3 !important;
+                        transition: 0.5s ease-in;
+                        margin: 0 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    main {
+        background-image: url(/assets/img/gif/gif-7sec.gif) !important;
+        background-size: cover;
+        background-attachment: fixed;
+        h1 {
+            font-size: 5rem;
+            font-weight: 800;
+
+            a {
+                text-decoration: none;
+                color: $color-4;
+            }
+        }
+
+
+    }
+
+    section {
+        h2 {
+            font-weight: 200 !important;
+            font-size: 2rem;
+
+            span {
+                font-size: 3.5rem;
+                font-weight: 800 !important;
+                line-height: 6rem;
+                transition: 0.5s ease-out;
+
+            }
+        }
+
+        button {
+            background-color: $color-3 !important;
+            transition: .3s ease-in;
+
+            &:hover {
+                background-color: #ffffff00 !important;
+                border: 1px solid $color-4 !important;
+                transition: 0.5s ease-out;
+
+                a {
+                    color: $color-3;
+                }
+            }
+
+            a {
+                color: $color-4;
+                text-decoration: none;
+            }
+        }
+    }
+    #about{
+        p{
+            font-weight: 200 !important;
+            span{
+                font-weight: 600;
+            }
+        }
+    }
+
+}
+
+
+
+
+.disable,
+.disable2 {
+    display: none;
+}
+
+.span-red {
+    color: $color-3;
+}
+
+.img-size {
+    max-width: 70vw;
+    max-height: 70vh;
+}
+
+.main-h {
+    height: 100vh !important;
+    width: 100% !important;
+}
+
+.section-h {
+    height: 80vh;
+}
+
+.text-w {
+    width: 75%;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $color-3;
+
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $color-1;
+}
+
+.bg-black {
+    background-color: $color-1;
+    border-radius: 2px;
+}
+
+@media(max-width: $layout-breakpoint-medium ) {
+    body {
+        main {
+            h1 {
+                font-size: 3.5rem !important;
+            }
+        }
+    }
+}
+
+@media (max-width: $layout-breakpoint-small) {
+    body {
+        header {
+            a {
+                font-size: 1rem !important;
+
+            }
+        }
+
+        main {
+            h1 {
+                font-size: 1.3rem !important;
+
+            }
+
+        }
+
+        #home {
+            h2 {
+                font-size: 1rem !important;
+
+                span {
+                    font-size: 2rem !important;
+                    line-height: 4rem;
+                }
+            }
+        }
+        #about{
+            h2{
+                font-size: 2rem;
+            }
+            
+            
+        }
+
+
+
+    }
+}
