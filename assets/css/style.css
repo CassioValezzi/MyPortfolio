@@ -99,11 +99,6 @@ body #projects .card button:hover {
   color: #da0037;
 }
 
-.img-size {
-  max-width: 70vw;
-  max-height: 70vh;
-}
-
 .main-h {
   height: 100vh !important;
   width: 100% !important;
@@ -137,7 +132,7 @@ body #projects .card button:hover {
 
 @media (max-width: 768px) {
   body main {
-    background-size: 100% 100%;
+    background-size: 200% 100%;
     background-repeat: no-repeat;
   }
   body main h1 {
@@ -149,7 +144,7 @@ body #projects .card button:hover {
     font-size: 1rem !important;
   }
   body main {
-    background-size: 300% 100%;
+    background-size: 500% 30%;
     background-repeat: no-repeat;
   }
   body main h1 {

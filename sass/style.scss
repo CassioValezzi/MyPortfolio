@@ -147,11 +147,6 @@ body {
     color: $color-3;
 }
 
-.img-size {
-    max-width: 70vw;
-    max-height: 70vh;
-}
-
 .main-h {
     height: 100vh !important;
     width: 100% !important;
@@ -188,7 +183,7 @@ body {
 @media(max-width: $layout-breakpoint-medium ) {
     body {
         main {
-            background-size: 100% 100%;
+            background-size: 200% 100%;
             background-repeat: no-repeat;
             h1 {
                 font-size: 3.5rem !important;
@@ -207,7 +202,7 @@ body {
         }
 
         main {
-            background-size: 300% 100%;
+            background-size: 500% 30%;
             background-repeat: no-repeat;
             h1 {
                 font-size: 1.3rem !important;
