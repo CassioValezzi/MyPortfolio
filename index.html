@@ -99,17 +99,24 @@
 
                 <h2 class="mb-4 text-center text-md-start span-red">MAIS SOBRE MIM</h2>
                 <p class="text-center text-md-start">
-                    Sou freelancer desde 2022 e <span class="span-red">tenho experiência prática em desenvolvimento web, bem como conhecimento em Design de Interface de Usuário e Experiência do Usuário (UI/UX).</span> Capaz de criar interfaces limpas e eficientes para atrair o público-alvo. 
+                    Sou freelancer desde 2022 e <span class="span-red">tenho experiência prática em desenvolvimento web,
+                        bem como conhecimento em Design de Interface de Usuário e Experiência do Usuário (UI/UX).</span>
+                    Capaz de criar interfaces limpas e eficientes para atrair o público-alvo.
                 </p>
                 <p class="text-center text-md-start">
-                    <span class="span-red">Experiência com integrações de API's em sistemas Web,</span> como criação de formulários que enviam informações do público para o cliente, e sistemas de verificação de nûmeros celular, ou verificação de e-mail. Atualmente, estou cursando Engenharia de Software (FIAP), para aprimorar minhas habilidades.
+                    <span class="span-red">Experiência com integrações de API's em sistemas Web,</span> como criação de
+                    formulários que enviam informações do público para o cliente, e sistemas de verificação de nûmeros
+                    celular, ou verificação de e-mail. Atualmente, estou cursando Engenharia de Software (FIAP), para
+                    aprimorar minhas habilidades.
                 </p>
                 <div class="d-flex justify-content-center justify-content-md-start mt-4">
-                    <button class="col-3 btn "><a href="https://www.linkedin.com/in/cassio-valezzi-09a837207/"
+                    <button class="col-3 btn me-2"><a href="https://www.linkedin.com/in/cassio-valezzi-09a837207/"
                             target="_blank"><i class="bi bi-linkedin"></i> Linkedin</a></button>
-                    <button class="col-3 btn mx-2"><a href="https://github.com/CassioValezzi"
-                            target="_blank"><i class="bi bi-github"></i> GitHub</a></button>
-                    <button class="col-3 btn "><a href="#projects"><i class="bi bi-terminal"></i> Projetos</a></button>
+                    <button class="col-3 btn me-2"><a href="https://github.com/CassioValezzi" target="_blank"><i
+                                class="bi bi-github"></i> GitHub</a></button>
+                    <button class="col-3 btn me-2"><a href="#projects"><i class="bi bi-terminal"></i>
+                            Projetos</a></button>
+                    <button class="col-3 btn "><a href="#contact"><i class="bi bi-terminal"></i> Contato</a></button>
                 </div>
             </div>
         </div>
@@ -120,14 +127,13 @@
     <section class="container mt-5 pt-4" id="projects">
         <div class="row d-flex justify-content-center">
             <h2 class="mb-4 text-center text-md-start span-red">MEUS PROJETOS</h2>
-            <div class="row row-cols-1 row-cols-sm-2">
+            <div class="row row-cols-1 row-cols-sm-2 p-4">
                 <div class="col mb-4">
                     <div class="card">
                         <img src="./assets/img/jpeg/eletrobuilding.com.br.jpeg" class="card-img-top"
                             alt="Site Eletro Building">
                         <div class="card-body">
                             <h3> Eletro Building</h3>
-                            <!-- <p class="card-text">Desenvolvi um site corporativo com uma interface simples e limpa, priorizando a melhor experiência do usuário (UX). Além disso, implementei um formulário que utiliza a API EmailJS para enviar e-mails ao setor correspondente da empresa. -->
                             Criei um site corporativo com uma interface simples e limpa, incluindo um formulário que
                             utiliza a API EmailJS para envio de e-mails diretos.
                             </p>
@@ -164,8 +170,47 @@
         </div>
     </section>
 
-    <section class="container mt-5 pt-4">
-        <div class="row d-flex justify-content-center"></div>
+    <section class="container mt-5 pt-4" id="contact">
+        <div class="row d-flex justify-content-center">
+            <h2 class="mb-4 text-center text-md-start span-red">CONTATO</h2>
+            <div class="row p-4">
+                <div class="col-12 col-md-3 mb-4">
+                    <h3>Redes Socias</h3>
+                    <div class="d-flex flex-column mt-4">
+                        <button class="col btn"><a href="https://www.linkedin.com/in/cassio-valezzi-09a837207/"
+                                target="_blank"><i class="bi bi-linkedin"></i> Linkedin</a></button>
+                        <button class="col btn my-4"><a href="https://github.com/CassioValezzi" target="_blank"><i
+                                    class="bi bi-github"></i> GitHub</a></button>
+                        <button class="col btn "><a href=""><i class="bi bi-whatsapp"></i> Whatsapp</a></button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 d-flex flex-column justify-content-center mb-4">
+                    <h3 class="text-center">OU</h3>
+                </div>
+                <div class="col-12 col-md-7 mb-4">
+                    <h3 class="mb-4 text-center text-md-start span-red">Mande uma mensagem</h3>
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="from_name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="from_name" name="from_name" placeholder="Exemplo: Fulano de Tal">
+                          </div>
+                        <div class="mb-3">
+                            <label for="cel" class="form-label">Celular</label>
+                            <input type="text" class="form-control" id="cel" name="cel" placeholder="Exemplo: +551199822-2238">
+                          </div>
+                        <div class="mb-3">
+                            <label for="reply_to" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="reply_to" name="reply_to" placeholder="Exemplo: nome@exemplo.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="message" class="form-label">Menssagem</label>
+                            <textarea class="form-control" id="message" rows="3" name="message" placeholder="Escreva sua menssagem aqui!"></textarea>
+                          </div>
+                        <button type="submit" class="btn btn-primary" id="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -174,8 +219,9 @@
 
 
 
-    <!-- <script src="./assets/js/title_menu_animation.js"></script> -->
     <script src="./assets/js/main_animation.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./assets/js/formtoemailjs.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

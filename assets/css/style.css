@@ -89,6 +89,11 @@ body #projects .card h3 {
 body #projects .card button:hover {
   border-color: #da0037 !important;
 }
+body #contact h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #da0037;
+}
 
 .disable,
 .disable2 {
