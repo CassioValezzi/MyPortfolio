@@ -8,6 +8,7 @@ $layout-breakpoint-small: 576px;
 $layout-breakpoint-medium: 768px;
 $layout-breakpoint-large: 992px;
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -119,17 +120,15 @@ body {
 
     #projects {
         .card {
+            height: 100%;
             border: 7px solid $color-2 !important;
             background-color: $color-4 !important;
             color: $color-1;
-
             h3 {
                 font-weight: 600;
                 font-size: 1.5rem;
                 color: $color-3;
-
             }
-
             button {
                 &:hover {
                     border-color: $color-3 !important;
@@ -195,7 +194,9 @@ body {
     background-color: $color-1;
     border-radius: 2px;
 }
-
+.social_btn{
+    height: 100%;
+}
 @media(max-width: $layout-breakpoint-medium ) {
     body {
         main {
@@ -219,7 +220,7 @@ body {
         }
 
         main {
-            background-size: 500% 30%;
+            background-size: 500% 130%;
             background-repeat: no-repeat;
 
             h1 {

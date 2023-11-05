@@ -92,7 +92,7 @@
 
     <section class="container mt-5 pt-4" id="about">
         <div class="row d-flex align-items-center">
-            <div class="mt-4 col-12 col-md-6 d-flex ">
+            <div class=" col-12 col-md-6 mt-4 d-flex ">
                 <img class="img-fluid mt-4" src="./assets/img/svg/Soft skills-bro.svg" alt="">
             </div>
             <div class="col-12 col-md-6 mt-4 d-flex flex-column justify-content-center ">
@@ -109,14 +109,16 @@
                     celular, ou verificação de e-mail. Atualmente, estou cursando Engenharia de Software (FIAP), para
                     aprimorar minhas habilidades.
                 </p>
-                <div class="d-flex justify-content-center justify-content-md-start mt-4">
-                    <button class="col-3 btn me-2"><a href="https://www.linkedin.com/in/cassio-valezzi-09a837207/"
-                            target="_blank"><i class="bi bi-linkedin"></i> Linkedin</a></button>
-                    <button class="col-3 btn me-2"><a href="https://github.com/CassioValezzi" target="_blank"><i
-                                class="bi bi-github"></i> GitHub</a></button>
-                    <button class="col-3 btn me-2"><a href="#projects"><i class="bi bi-terminal"></i>
+                <div class="row d-flex gap-2 justify-content-center justify-content-md-start  mt-4">
+                    <button class="col-10 col-md-5 btn "><a href="#projects"><i class="bi bi-terminal"></i>
                             Projetos</a></button>
-                    <button class="col-3 btn "><a href="#contact"><i class="bi bi-terminal"></i> Contato</a></button>
+                    <button class="col-10 col-md-5 btn "><a href="#contact"><i class="bi bi-chat-left-dots"></i>
+                            Contato</a></button>
+                    <button class="col-10 col-md-5 btn "><a href="https://www.linkedin.com/in/cassio-valezzi-09a837207/"
+                            target="_blank"><i class="bi bi-linkedin"></i> Linkedin</a></button>
+                    <button class="col-10 col-md-5 btn "><a href="https://github.com/CassioValezzi" target="_blank"><i
+                                class="bi bi-github"></i> GitHub</a></button>
+
                 </div>
             </div>
         </div>
@@ -132,7 +134,7 @@
                     <div class="card">
                         <img src="./assets/img/jpeg/eletrobuilding.com.br.jpeg" class="card-img-top"
                             alt="Site Eletro Building">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h3> Eletro Building</h3>
                             Criei um site corporativo com uma interface simples e limpa, incluindo um formulário que
                             utiliza a API EmailJS para envio de e-mails diretos.
@@ -150,11 +152,9 @@
                 <div class="col mb-4">
                     <div class="card">
                         <img src="./assets/img/jpeg/password_gen.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h3>Gerador de Senha</h3>
-                            <p class="card-text">Criei um site corporativo com uma interface simples e limpa, incluindo
-                                um formulário que
-                                utiliza a API EmailJS para envio de e-mails diretos.</p>
+                            <p class="card-text">Esse aplicativo foi criado para sugerir senhas fortes ao usuário.</p>
                             <div class="d-flex justify-content-evenly mt-4">
                                 <button class="col-5  btn"><a
                                         href="https://github.com/CassioValezzi/Password-Generator/blob/main/password%20generator.exe"
@@ -165,7 +165,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -176,7 +175,7 @@
             <div class="row p-4">
                 <div class="col-12 col-md-3 mb-4">
                     <h3>Redes Socias</h3>
-                    <div class="d-flex flex-column mt-4">
+                    <div class="d-flex flex-column justify-content-center mt-4">
                         <button class="col btn"><a href="https://www.linkedin.com/in/cassio-valezzi-09a837207/"
                                 target="_blank"><i class="bi bi-linkedin"></i> Linkedin</a></button>
                         <button class="col btn my-4"><a href="https://github.com/CassioValezzi" target="_blank"><i
@@ -192,26 +191,32 @@
                     <form id="contact-form">
                         <div class="mb-3">
                             <label for="from_name" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="from_name" name="from_name" placeholder="Exemplo: Fulano de Tal">
-                          </div>
+                            <input type="text" class="form-control" id="from_name" name="from_name"
+                                placeholder="Exemplo: Fulano de Tal">
+                        </div>
                         <div class="mb-3">
                             <label for="cel" class="form-label">Celular</label>
-                            <input type="text" class="form-control" id="cel" name="cel" placeholder="Exemplo: +551199822-2238">
-                          </div>
+                            <input type="text" class="form-control" id="cel" name="cel"
+                                placeholder="Exemplo: +551199822-2238">
+                        </div>
                         <div class="mb-3">
                             <label for="reply_to" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="reply_to" name="reply_to" placeholder="Exemplo: nome@exemplo.com">
-                          </div>
-                          <div class="mb-3">
+                            <input type="email" class="form-control" id="reply_to" name="reply_to"
+                                placeholder="Exemplo: nome@exemplo.com">
+                        </div>
+                        <div class="mb-3">
                             <label for="message" class="form-label">Menssagem</label>
-                            <textarea class="form-control" id="message" rows="3" name="message" placeholder="Escreva sua menssagem aqui!"></textarea>
-                          </div>
+                            <textarea class="form-control" id="message" rows="3" name="message"
+                                placeholder="Escreva sua menssagem aqui!"></textarea>
+                        </div>
                         <button type="submit" class="btn btn-primary" id="submit">Enviar</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
+
 
 
 
