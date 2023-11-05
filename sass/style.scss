@@ -153,8 +153,7 @@ body {
 
 
 
-.disable,
-.disable2 {
+.disable {
     display: none;
 }
 
@@ -194,9 +193,7 @@ body {
     background-color: $color-1;
     border-radius: 2px;
 }
-.social_btn{
-    height: 100%;
-}
+
 @media(max-width: $layout-breakpoint-medium ) {
     body {
         main {

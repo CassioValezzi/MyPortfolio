@@ -96,8 +96,7 @@ body #contact h3 {
   color: #da0037;
 }
 
-.disable,
-.disable2 {
+.disable {
   display: none;
 }
 
@@ -134,10 +133,6 @@ body #contact h3 {
 .bg-black {
   background-color: #171717;
   border-radius: 2px;
-}
-
-.social_btn {
-  height: 100%;
 }
 
 @media (max-width: 768px) {
