@@ -33,3 +33,7 @@ function animationTitle(lista, index, text) {
 
 
 animationTitle(title_list_main, 0, main_title)
+
+window.addEventListener('scroll',()=>{
+        document.querySelector(".menu").classList.toggle('active-scroll', window.scrollY > 100)
+})

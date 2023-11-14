@@ -19,8 +19,8 @@ body {
     font-family: "Montserrat";
 
     header {
-        background-color: $color-2 !important;
-        box-shadow: 2px 5px 7px 1px #0f0f0f !important;
+        
+        
 
         a {
             span {
@@ -124,11 +124,13 @@ body {
             border: 7px solid $color-2 !important;
             background-color: $color-4 !important;
             color: $color-1;
+
             h3 {
                 font-weight: 600;
                 font-size: 1.5rem;
                 color: $color-3;
             }
+
             button {
                 &:hover {
                     border-color: $color-3 !important;
@@ -137,6 +139,7 @@ body {
 
         }
     }
+
     #contact {
         h3 {
             font-weight: 600;
@@ -146,15 +149,25 @@ body {
         }
     }
 
-    
+
 
 }
 
+.active-scroll {
+    background-color: $color-2;
+    box-shadow: 2px 5px 7px 1px #0f0f0f !important;
+}
 
 
+.menu {
+    z-index: 1;
+    transition: 1s;
+
+}
 
 .disable {
     display: none;
+
 }
 
 .span-red {
