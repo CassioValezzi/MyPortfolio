@@ -1,6 +1,6 @@
 const main_title = document.querySelector("#main-title")
 main_title.innerHTML = ""
-const animated_title_main = "cd Cassio/Portifólio"
+const animated_title_main = "cd Cadu/Portifólio"
 const title_list_main = animated_title_main.split("")
 
 
