@@ -28,7 +28,6 @@ body header nav ul a:hover {
   margin: 0 10px;
 }
 body main {
-  background-image: url(../gif/gif-7sec.gif) !important;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -65,6 +64,32 @@ body section button:hover a {
 body section button a {
   color: #EDEDED;
   text-decoration: none;
+}
+body #home .img-animation-custom {
+  animation: levitation 5s linear infinite;
+}
+@keyframes levitation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+body #home .animation-custom {
+  position: relative;
+  animation: appear 20s linear;
+}
+@keyframes appear {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }
 body #about p {
   font-weight: 200 !important;
@@ -142,10 +167,6 @@ body #contact h3 {
 }
 
 @media (max-width: 768px) {
-  body main {
-    background-size: 200% 100%;
-    background-repeat: no-repeat;
-  }
   body main h1 {
     font-size: 3.5rem !important;
   }
@@ -153,10 +174,6 @@ body #contact h3 {
 @media (max-width: 576px) {
   body header a {
     font-size: 1rem !important;
-  }
-  body main {
-    background-size: 500% 130%;
-    background-repeat: no-repeat;
   }
   body main h1 {
     font-size: 1.3rem !important;
